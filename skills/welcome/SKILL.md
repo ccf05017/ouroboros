@@ -235,6 +235,11 @@ Just include these naturally in your request:
 | evaluate | 3-stage check | "evaluate this implementation" |
 | stuck | Lateral thinking | "I'm stuck on the auth flow" |
 
+REAL-TIME MONITORING (TUI):
+When running ooo run or ooo evolve, open a separate terminal:
+  uvx --from ouroboros-ai ouroboros tui monitor
+Press 1-4 to switch screens (Dashboard, Execution, Logs, Debug).
+
 READY TO BUILD:
 - ooo interview "your project idea"
 - ooo tutorial  # Interactive learning

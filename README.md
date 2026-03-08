@@ -293,6 +293,29 @@ src/ouroboros/
 
 ---
 
+## Real-Time Monitoring (TUI)
+
+Ouroboros includes a **terminal dashboard** for real-time workflow monitoring. Run it in a separate terminal while `ooo run` or `ooo evolve` is executing:
+
+```bash
+# Install and launch
+uvx --from ouroboros-ai ouroboros tui monitor
+
+# Or if installed locally
+uv run ouroboros tui monitor
+```
+
+| Key | Screen | What You See |
+|:---:|:-------|:-------------|
+| `1` | **Dashboard** | Phase progress, acceptance criteria tree, live status |
+| `2` | **Execution** | Timeline, phase outputs, detailed events |
+| `3` | **Logs** | Filterable log viewer with level-based coloring |
+| `4` | **Debug** | State inspector, raw events, configuration |
+
+> See [TUI Usage Guide](./docs/guides/tui-usage.md) for full details.
+
+---
+
 ## Contributing
 
 ```bash
